@@ -1,0 +1,74 @@
+[
+  {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "3.667",
+    "phoneNumber": 8775268145,
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95054,
+    "termYear": 15
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "3.680",
+    "phoneNumber": 8772069514,
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95054,
+    "termYear": 30
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "3.750",
+    "phoneNumber": 8007778888,
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95054,
+    "termYear": 30
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "3.550",
+    "phoneNumber": 8007770000,
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95051,
+    "termYear": 15
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "3.350",
+    "phoneNumber": 8007772222,
+    "website": "https://www.chase.com/",
+    "zipCode": 95051,
+    "termYear": 15
+  },
+  {
+    "lenderName": "Citibank",
+    "mortgageRate": "3.250",
+    "phoneNumber": 8007771111,
+    "website": "https://www.citibank.com/",
+    "zipCode": 95051,
+    "termYear": 30
+  },
+  {
+    "lenderName": "KeyBank",
+    "mortgageRate": "3.050",
+    "phoneNumber": 8007779999,
+    "website": "https://www.KeyBank.com/",
+    "zipCode": 95054,
+    "termYear": 30
+  },
+  {
+    "lenderName": "ETrade",
+    "mortgageRate": "3.750",
+    "phoneNumber": 8007776666,
+    "website": "https://www.Etrade.com/",
+    "zipCode": 94305,
+    "termYear": 15
+  },
+  {
+    "lenderName": "WellsFargo",
+    "mortgageRate": "3.150",
+    "phoneNumber": 8007772222,
+    "website": "https://www.wellsfargo.com/",
+    "zipCode": 94305,
+    "termYear": 30
+  }
+]

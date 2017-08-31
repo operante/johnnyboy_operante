@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mortgage Calculator</title>
+<style>
+    input[type=number], select {
+	width: 20%;
+	padding: 5px 5px 5px 5px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+        border-radius: 4px;
+	box-sizing: border-box;
+	padding-right: 40px;
+    }
+    #container{
+        width: 940px;
+        height: 800px;
+        position: relative;
+        margin-left: 100px;
+        overflow: hidden;
+        border-style: double;
+        border-color: black;
+    }
+
+    #mortgage-title {
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+    }
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+<script src="js/mortgageFunctions.js"></script>
+
+</head>
+<body background="img/bgk.jpeg">
+<div id="container">
+    <h1 id="mortgage-title"> <span class="glyphicon glyphicon-tree-deciduous"></span>Mortage Calculator AJAX Final<i class="fa fa-plus" aria-hidden="true"></i></h1>
+    <p>
+        <label style="font-family:'Noto Sans',sans-serif" for="purchasePrice">Purachase price: </label>
+        <input id="purchasePrice" type="number" min="1" max="1000000" onkeyup="validateNumericInput()" placeholder="" required />
+        <span id="validateAmountMsg"></span>
+
+    </p>
+    <p>
+        <label style="font-family:'Noto Sans',sans-serif" for="rate"> Annual Interest:</label>
+        <input id="rate" type="number" min="0" max="100" value=5.00 step=".125" onchange="computeLoan()" required />
+    </p>
+
+    <p>
+        <label style="font-family:'Noto Sans',sans-serif" for="months">Repayment Period (years):</label>
+        <input id="months" type="number" min=5 max=30 value=30 step=5 onchange="computeLoan()" required />
+    </p>
+    <p>
+        <label style="font-family:'Noto Sans',sans-serif" for="months">ZipCode: </label>
+        <input id="zipcode" type="number" required/>
+    </p>
+    <p>
+        <label style="font-family:'Noto Sans',sans-serif" for="downPercent">Down Payment Percentage(%): </label>
+        <input id="downPercent" type="number" min="0" max="100" value=20 onchange="computeLoan()" required />
+        <br>
+        <label style="font-family:'Noto Sans',sans-serif" for="downpayment">Down Payment:</label>
+        <span id="downpayment"></span>
+    </p>
+
+    <h2 id="newPayment"></h2>
+
+    <p>
+        <button class="btn btn-primary" onclick="computeLoan();">Calculate</button>
+    </p>
+    <ol style="list-style: none;">
+        <li id="monthly"></li>
+        <li id="total"></li>
+        <li id="interest"></li>
+    </ol>
+    <div>
+        <span id="lender-list"></span>
+    </div>
+</div>
+</body>
+</html>
