@@ -70,5 +70,21 @@
     "website": "https://www.wellsfargo.com/",
     "zipCode": 94305,
     "termYear": 30
+  },
+  {
+    "lenderName": "WellsFargo",
+    "mortgageRate": "3.750",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.wellsfargo.com/",
+    "zipCode": 94305,
+    "termYear": 10
+  },
+  {
+    "lenderName": "WellsFargo",
+    "mortgageRate": "2.750",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.wellsfargo.com/",
+    "zipCode": 94305,
+    "termYear": 5
   }
 ]
