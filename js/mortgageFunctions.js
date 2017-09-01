@@ -105,10 +105,18 @@ function MonthlyPayment (loanPrincipal, numberOfMonths, rate) {
 /*
  * Input validations
  */
-function validateNumericInput() {
+function checkPurchasePrice() {
     if (document.getElementById("purchasePrice").value) {
         document.getElementById("validateAmountMsg").innerHTML = "";
     } else {
-        document.getElementById("validateAmountMsg").innerHTML = "Please enter only numbers.";
+        document.getElementById("validateAmountMsg").innerHTML = "Please only enter numbers.";
+    }
+}
+
+function checkZipcode() {
+    if (document.getElementById("zipcode").value) {
+        document.getElementById("validateZipcodeMsg").innerHTML = "";
+    } else {
+        document.getElementById("validateZipcodeMsg").innerHTML = "Please only enter numbers for the zipcode.";
     }
 }
