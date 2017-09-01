@@ -1,11 +1,10 @@
 /* computeLoan()
  *
- * This function is invoked when Calculate Payment button is clicked to read the purchase price, loan term, and other
- * details to simulate and display the Monthly payment, Total Payment, Total Interest.
+ * This function is invoked when Calculate Payment button is clicked to read the purchase price, loan term, and other details to simulate and display the Monthly payment, Total Payment, Total Interest.
  *
  */
 function computeLoan() {
-    // while (true) {
+    while (true) {
         if (document.getElementById("purchasePrice").value === "") {
             document.getElementById("validateAmountMsg").innerHTML = "Purchase price is required.";
         } else {
@@ -16,19 +15,22 @@ function computeLoan() {
             let downPayment = purchasePrice * downPercent;                         // Downpayment in $
             let loanPrincipal = purchasePrice - downPayment;
             let monthlyPayment = new MonthlyPayment(loanPrincipal, numbersMonths, interestRate); //monthly total payment
+					  let monthlyPaymentLocale = Number(monthlyPayment.payment).toLocaleString();
             let totalEverything = monthlyPayment.payment * numbersMonths;
+						let totalEverythingLocale = Number(totalEverything.toFixed(2)).toLocaleString();
             let totalInterest = totalEverything - loanPrincipal;
+						let totalInterestLocale = Number(totalInterest.toFixed(2)).toLocaleString();
 
             document.getElementById("downpayment").innerHTML = "$" + downPayment;
-            document.getElementById('newPayment').innerHTML = "Your Monthly Payment = $" + monthlyPayment.payment;
-            document.getElementById('monthly').innerHTML = "Your monthly total payment is: " + "$" + monthlyPayment.payment;
-            document.getElementById('total').innerHTML = "Your total payment: " + "$" + totalEverything.toFixed(2);
-            document.getElementById('interest').innerHTML = "Your interest amount is: " + "$" + totalInterest.toFixed(2);
+            document.getElementById('newPayment').innerHTML = "Your Monthly Payment = $" + monthlyPaymentLocale;
+            document.getElementById('monthly').innerHTML = "Your monthly total payment is: " + "$" + monthlyPaymentLocale;
+            document.getElementById('total').innerHTML = "Your total payment: " + "$" + totalEverythingLocale;
+            document.getElementById('interest').innerHTML = "Your interest amount is: " + "$" + totalInterestLocale;
 
-            requestData(document.getElementById('purchasePrice').value);
+            requestData(document.getElementById('purchasePrice').value, numbersMonths);
         }
-   //     break;
-   // }
+        break;
+    }
 }
 
 /* MonthlyPayment(loanPrincipal, numberOfMonths, rate)
@@ -50,7 +52,8 @@ function MonthlyPayment (loanPrincipal, numberOfMonths, rate) {
  * Called by computeLoan().
  * Get mortgate lender data.
  */
-function requestData(loanPrincipal){
+function requestData(loanPrincipal, loanTerm){
+		this.loanTerm = loanTerm; //This is number of the month
     let f = new XMLHttpRequest();
     let html = "";
     f.open('GET', './data/data.json', true);
@@ -60,7 +63,7 @@ function requestData(loanPrincipal){
         if (f.status != 200) {
             console.log(f.status + ': ' + f.statusText);
         } else {
-            generateInnerHTML(f, html, loanPrincipal);
+            generateInnerHTML(f, html, loanPrincipal, loanTerm);
         }
     }
 }
@@ -69,19 +72,20 @@ function requestData(loanPrincipal){
  * Called by requestData().
  * Generate lender list HTML and insert into the page.
  */
-function generateInnerHTML(f, html, loanPrincipal) {
-    let loanTerm = 360;
+function generateInnerHTML(f, html, loanPrincipal, loanTerm) {
+    this.loanTerm = loanTerm; //This is number of the month
     let dataArray = JSON.parse(f.responseText);
     for(let i = 0; i < dataArray.length; i++){
         let lender = dataArray[i].lenderName;
         let rate = dataArray[i].mortgageRate;
-        let monthlyPayment = new MonthlyPayment(loanPrincipal, loanTerm, rate);
+        let monthlyPayment = new MonthlyPayment(loanPrincipal, this.loanTerm, rate);
+				let monthlyPaymentLocale = Number(monthlyPayment.payment).toLocaleString();
         let phone = dataArray[i].phoneNumber;
         let webUrl = dataArray[i].website;
         html +=
             'Lender: ' + lender + '&nbsp' +
             '<a class="glyphicon glyphicon-link" aria-hidden="true" href=' + webUrl + '></a>' + '<br>' +
-            'Monthly Payment: ' + monthlyPayment.payment + '<br>' +
+            'Monthly Payment: ' + "$" + monthlyPaymentLocale + '<br>' +
             'Lender Phone No.: ' + phone + '<br>' +
             'Lender Website: ' + webUrl + '<br><br>';
         document.getElementById('lender-list').innerHTML = html;

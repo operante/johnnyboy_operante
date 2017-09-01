@@ -5,18 +5,18 @@
 <title>Mortgage Calculator</title>
 <style>
     input[type=number], select {
-	width: 20%;
-	padding: 5px 5px 5px 5px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
+				width: 20%;
+				padding: 5px 5px 5px 5px;
+				margin: 8px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
         border-radius: 4px;
-	box-sizing: border-box;
-	padding-right: 40px;
+				box-sizing: border-box;
+				padding-right: 40px;
     }
     #container{
-        width: 940px;
-        height: 800px;
+        width: 1000px;
+        height: 1800px;
         position: relative;
         margin-left: 100px;
         overflow: hidden;
@@ -35,9 +35,9 @@
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
 <script src="js/mortgageFunctions.js"></script>
-
 </head>
-<body background="img/bgk.jpeg">
+
+<body>
 <div id="container">
     <h1 id="mortgage-title"> <span class="glyphicon glyphicon-tree-deciduous"></span>Mortage Calculator AJAX Final<i class="fa fa-plus" aria-hidden="true"></i></h1>
     <p>
@@ -77,6 +77,7 @@
         <li id="total"></li>
         <li id="interest"></li>
     </ol>
+		<p style="color:blue;">Lender List: </p>
     <div>
         <span id="lender-list"></span>
     </div>
