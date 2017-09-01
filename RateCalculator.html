@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Mortgage Calculator</title>
-<style>
-    input[type=number], select {
-				width: 20%;
-				padding: 5px 5px 5px 5px;
-				margin: 8px 0;
-				display: inline-block;
-				border: 1px solid #ccc;
-        border-radius: 4px;
-				box-sizing: border-box;
-				padding-right: 40px;
-    }
-    #container{
-        width: 1000px;
-        height: 1800px;
-        position: relative;
-        margin-left: 100px;
-        overflow: hidden;
-        border-style: double;
-        border-color: black;
-    }
+    <meta charset="UTF-8">
+    <title>Mortgage Calculator</title>
+    <style>
+        input[type=number], select {
+            width: 20%;
+            padding: 5px 5px 5px 5px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            padding-right: 40px;
+        }
+        #container{
+            width: 1000px;
+            height: 1800px;
+            position: relative;
+            margin-left: 130px;
+            overflow: hidden;
+            border-style: double;
+            border-color: black;
+        }
 
     #mortgage-title {
         text-align: center;
@@ -41,7 +41,7 @@
 <div id="container">
     <h1 id="mortgage-title"> <span class="glyphicon glyphicon-tree-deciduous"></span>Mortage Calculator AJAX Final<i class="fa fa-plus" aria-hidden="true"></i></h1>
     <p>
-        <label style="font-family:'Noto Sans',sans-serif" for="purchasePrice">Purachase price: </label>
+        <label style="font-family:'Noto Sans',sans-serif" for="purchasePrice">Purchase price: </label>
         <input id="purchasePrice" type="number" min="1" max="1000000" onkeyup="checkPurchasePrice()" placeholder="" required />
         <span id="validateAmountMsg"></span>
 
@@ -49,12 +49,13 @@
     <p>
         <label style="font-family:'Noto Sans',sans-serif" for="rate"> Annual Interest:</label>
         <input id="rate" type="number" min="0" max="100" value=5.00 step=".125" onchange="computeLoan()" required />
+        <label style="font-family:'Noto Sans',sans-serif" for="months">(Use Arrows to change rate)</label>
     </p>
 
     <p>
         <label style="font-family:'Noto Sans',sans-serif" for="months">Repayment Period (years):</label>
-        <input id="months" type="number" min=5 max=30 value=30 step=5 onchange="computeLoan()" required />
-    </p>
+        <input id="months" type="number" min=10 max=30 value=30 step=10 onchange="computeLoan()" required />
+        <label style="font-family:'Noto Sans',sans-serif" for="months">(Use Arrows to change years)</label>
     <p>
         <label style="font-family:'Noto Sans',sans-serif" for="months">ZipCode: </label>
         <input id="zipcode" type="number" onkeyup="checkZipcode();" required/>
@@ -63,6 +64,7 @@
     <p>
         <label style="font-family:'Noto Sans',sans-serif" for="downPercent">Down Payment Percentage(%): </label>
         <input id="downPercent" type="number" min="0" max="100" value=20 onchange="computeLoan()" required />
+        <label style="font-family:'Noto Sans',sans-serif" for="months">(Use Arrows to change Down Payment)</label>
         <br>
         <label style="font-family:'Noto Sans',sans-serif" for="downpayment">Down Payment:</label>
         <span id="downpayment"></span>

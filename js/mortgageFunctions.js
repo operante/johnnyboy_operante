@@ -27,7 +27,7 @@ function computeLoan() {
 
         getLender(document.getElementById('purchasePrice').value, numbersMonths, zipCode);
     } else {
-        document.getElementById("validateAmountMsg").innerHTML = "Purchase price is required.";
+        document.getElementById("validateAmountMsg").innerHTML = "<span style='color:red;'>Purchase Price is Required</span>";
     }
 }
 
@@ -61,7 +61,6 @@ function generateInnerHTML(f, loanPrincipal, loanTerm, zipCode) {
     let term = loanTerm / 12;
     for (let i = 0; i < dataArray.length; i++) {
         if (zipCode != "" && dataArray[i].zipCode == zipCode && term == dataArray[i].termYear) {
-            //if (term == dataArray[i].termYear) {
                 let lender = dataArray[i].lenderName;
                 let rate = dataArray[i].mortgageRate * 0.01;
                 let monthlyPayment = new MonthlyPayment(loanPrincipal, loanTerm, rate);
@@ -78,7 +77,6 @@ function generateInnerHTML(f, loanPrincipal, loanTerm, zipCode) {
                     'Lender Zipcode : ' + zipcode + '<br>' +
                     'Lender Website : ' + webUrl + '<br><br>';
                 document.getElementById('lender-list').innerHTML = html;
-        //    }
         }
     }
 }
@@ -109,14 +107,14 @@ function checkPurchasePrice() {
     if (document.getElementById("purchasePrice").value) {
         document.getElementById("validateAmountMsg").innerHTML = "";
     } else {
-        document.getElementById("validateAmountMsg").innerHTML = "Please only enter numbers.";
+        document.getElementById("validateAmountMsg").innerHTML = "<span style='color:red;'>Please only enter numbers.</span>";
     }
 }
 
 function checkZipcode() {
     if (document.getElementById("zipcode").value) {
-        document.getElementById("validateZipcodeMsg").innerHTML = "";
+        document.getElementById("validateZipcodeMsg").innerHTML = "(i.e. 95054 for UCSC)";
     } else {
-        document.getElementById("validateZipcodeMsg").innerHTML = "Please only enter numbers for the zipcode.";
+        document.getElementById("validateZipcodeMsg").innerHTML = "<span style='color:red;'>Please enter zipcode. (i.e. 95054)</span>";
     }
 }
