@@ -77,8 +77,6 @@ function generateInnerHTML(f, loanPrincipal, loanTerm, zipCode) {
             'Lender Zipcode : ' + zipcode + '<br>' +
             'Lender Website : ' + webUrl + '<br><br>';
     }
-    console.log("HTML : : : : :" + "\\" + html + "\\");
-
     if (html != "") {
         document.getElementById('lender-list').innerHTML = html;
     } else {
