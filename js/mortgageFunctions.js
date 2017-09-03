@@ -27,7 +27,8 @@ function computeLoan() {
 
         getLender(document.getElementById('purchasePrice').value, numbersMonths, zipCode);
     } else {
-        document.getElementById("validateAmountMsg").innerHTML = "<span style='color:red;'>Purchase Price is Required</span>";
+        document.getElementById("validateAmountMsg").innerHTML =
+            "<span style='color:red;'>Purchase Price is Required</span>";
     }
 }
 
@@ -59,26 +60,31 @@ function generateInnerHTML(f, loanPrincipal, loanTerm, zipCode) {
     let html = "";
     let dataArray = JSON.parse(f.responseText);
     let term = loanTerm / 12;
-    for (let i = 0; i < dataArray.length; i++) {
-        if (zipCode != "" && dataArray[i].zipCode == zipCode && term == dataArray[i].termYear) {
-                let lender = dataArray[i].lenderName;
-                let rate = dataArray[i].mortgageRate * 0.01;
-                let monthlyPayment = new MonthlyPayment(loanPrincipal, loanTerm, rate);
-                let monthlyPaymentLocale = Number(monthlyPayment.payment).toLocaleString();
-                let phone = dataArray[i].phoneNumber;
-                let zipcode = dataArray[i].zipCode;
-                let webUrl = dataArray[i].website;
-                html +=
-                    'Lender : ' + lender + '&nbsp' +
-                    '<a class="glyphicon glyphicon-link" aria-hidden="true" href=' + webUrl + '></a>' + '<br>' +
-                    'Rate : ' + (rate * 100).toFixed(3) + '<br>' +
-                    'Monthly Payment :' + "$" + monthlyPaymentLocale + '<br>' +
-                    'Lender Phone No. : ' + phone + '<br>' +
-                    'Lender Zipcode : ' + zipcode + '<br>' +
-                    'Lender Website : ' + webUrl + '<br><br>';
-                document.getElementById('lender-list').innerHTML = html;
-        }
+    for (let i = 0; i < dataArray.length; i++) if (zipCode != "" && dataArray[i].zipCode == zipCode && term == dataArray[i].termYear) {
+        let lender = dataArray[i].lenderName;
+        let rate = dataArray[i].mortgageRate * 0.01;
+        let monthlyPayment = new MonthlyPayment(loanPrincipal, loanTerm, rate);
+        let monthlyPaymentLocale = Number(monthlyPayment.payment).toLocaleString();
+        let phone = dataArray[i].phoneNumber;
+        let zipcode = dataArray[i].zipCode;
+        let webUrl = dataArray[i].website;
+        html +=
+            'Lender : ' + lender + '&nbsp' +
+            '<a class="glyphicon glyphicon-link" aria-hidden="true" href=' + webUrl + '></a>' + '<br>' +
+            'Rate : ' + (rate * 100).toFixed(3) + '<br>' +
+            'Monthly Payment :' + "$" + monthlyPaymentLocale + '<br>' +
+            'Lender Phone No. : ' + phone + '<br>' +
+            'Lender Zipcode : ' + zipcode + '<br>' +
+            'Lender Website : ' + webUrl + '<br><br>';
     }
+    console.log("HTML : : : : :" + "\\" + html + "\\");
+
+    if (html != "") {
+        document.getElementById('lender-list').innerHTML = html;
+    } else {
+        document.getElementById('lender-list').innerHTML = "<span style='color:hotpink'>There is no lenders for your seach.</span>";
+    }
+
 }
 
 /* MonthlyPayment(loanPrincipal, numberOfMonths, rate)
