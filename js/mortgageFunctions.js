@@ -80,7 +80,8 @@ function generateInnerHTML(f, loanPrincipal, loanTerm, zipCode) {
     if (html != "") {
         document.getElementById('lender-list').innerHTML = html;
     } else {
-        document.getElementById('lender-list').innerHTML = "<span style='color:hotpink'>There is no lenders for your seach.</span>";
+        document.getElementById('lender-list').innerHTML = "<span style='color:hotpink'>There is no lenders for your seach. <br>" +
+            "Try again (i.e. 95053, 95054)</span>";
     }
 
 }
@@ -121,7 +122,7 @@ function checkPurchasePrice() {
 function checkZipcode(e) {
     zipCodeEntered(e);
     if (document.getElementById("zipcode").value) {
-        document.getElementById("validateZipcodeMsg").innerHTML = "(i.e. 95054 for UCSC)";
+        document.getElementById("validateZipcodeMsg").innerHTML = "(i.e. 95054, 95055, etc for Santa Clara)";
     } else {
         document.getElementById("validateZipcodeMsg").innerHTML = "<span style='color:red;'>Please enter zipcode. (i.e. 95054)</span>";
     }
