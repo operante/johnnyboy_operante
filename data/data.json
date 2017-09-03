@@ -1,7 +1,79 @@
 [
   {
     "lenderName": "AnnieMac",
-    "mortgageRate": "3.825",
+    "mortgageRate": "3.925",
+    "phoneNumber": "877-526-8145",
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95051,
+    "termYear": 10
+  },
+  {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "3.225",
+    "phoneNumber": "877-526-8145",
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95051,
+    "termYear": 20
+  },
+  {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "3.267",
+    "phoneNumber": "877-526-8145",
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95051,
+    "termYear": 30
+  },
+    {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "3.925",
+    "phoneNumber": "877-526-8145",
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95052,
+    "termYear": 10
+  },
+  {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "3.925",
+    "phoneNumber": "877-526-8145",
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95052,
+    "termYear": 20
+  },
+  {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "3.867",
+    "phoneNumber": "877-526-8145",
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95052,
+    "termYear": 30
+  },
+  {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "2.125",
+    "phoneNumber": "877-526-8145",
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95053,
+    "termYear": 20
+  },
+  {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "2.667",
+    "phoneNumber": "877-526-8145",
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95053,
+    "termYear": 10
+  },
+  {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "3.125",
+    "phoneNumber": "877-526-8145",
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95053,
+    "termYear": 30
+  },
+  {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "3.967",
     "phoneNumber": "877-526-8145",
     "website": "https://www.annie-mac.com/",
     "zipCode": 95054,
@@ -9,9 +81,121 @@
   },
   {
     "lenderName": "AnnieMac",
-    "mortgageRate": "3.667",
+    "mortgageRate": "3.267",
     "phoneNumber": "877-526-8145",
     "website": "https://www.annie-mac.com/",
+    "zipCode": 95054,
+    "termYear": 20
+  },
+  {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "3.078",
+    "phoneNumber": "877-526-8145",
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95054,
+    "termYear": 30
+  },
+  {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "2.967",
+    "phoneNumber": "877-526-8145",
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95055,
+    "termYear": 10
+  },
+  {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "2.267",
+    "phoneNumber": "877-526-8145",
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95055,
+    "termYear": 20
+  },
+  {
+    "lenderName": "AnnieMac",
+    "mortgageRate": "2.078",
+    "phoneNumber": "877-526-8145",
+    "website": "https://www.annie-mac.com/",
+    "zipCode": 95055,
+    "termYear": 30
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "4.680",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95051,
+    "termYear": 30
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "4.880",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95051,
+    "termYear": 20
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "4.980",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95051,
+    "termYear": 10
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "5.680",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95052,
+    "termYear": 30
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "5.880",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95052,
+    "termYear": 20
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "5.980",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95052,
+    "termYear": 10
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "5.880",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95053,
+    "termYear": 30
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "5.880",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95053,
+    "termYear": 20
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "6.120",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95053,
+    "termYear": 10
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "3.680",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
     "zipCode": 95054,
     "termYear": 30
   },
@@ -24,11 +208,43 @@
     "termYear": 20
   },
   {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "3.680",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95054,
+    "termYear": 10
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "2.680",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95055,
+    "termYear": 30
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "2.480",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95055,
+    "termYear": 20
+  },
+  {
+    "lenderName": "FreddieMac",
+    "mortgageRate": "2.080",
+    "phoneNumber": "877-206-9514",
+    "website": "http://www.freddiemac.com/",
+    "zipCode": 95055,
+    "termYear": 10
+  },
+  {
     "lenderName": "Bank Of America",
-    "mortgageRate": "3.750",
+    "mortgageRate": "3.450",
     "phoneNumber": "800-777-8888",
     "website": "https://www.bankofamerica.com/",
-    "zipCode": 95054,
+    "zipCode": 95051,
     "termYear": 30
   },
   {
@@ -37,22 +253,254 @@
     "phoneNumber": "800-777-0000",
     "website": "https://www.bankofamerica.com/",
     "zipCode": 95051,
-    "termYear": 15
+    "termYear": 10
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "3.870",
+    "phoneNumber": "800-777-0000",
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95051,
+    "termYear": 20
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "4.170",
+    "phoneNumber": "800-777-0000",
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95052,
+    "termYear": 10
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "4.170",
+    "phoneNumber": "800-777-0000",
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95052,
+    "termYear": 20
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "4.370",
+    "phoneNumber": "800-777-0000",
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95052,
+    "termYear": 30
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "2.170",
+    "phoneNumber": "800-777-0000",
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95053,
+    "termYear": 10
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "2.870",
+    "phoneNumber": "800-777-0000",
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95053,
+    "termYear": 20
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "2.070",
+    "phoneNumber": "800-777-0000",
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95053,
+    "termYear": 30
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "2.070",
+    "phoneNumber": "800-777-0000",
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95054,
+    "termYear": 10
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "2.070",
+    "phoneNumber": "800-777-0000",
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95054,
+    "termYear": 20
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "2.000",
+    "phoneNumber": "800-777-0000",
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95054,
+    "termYear": 30
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "2.700",
+    "phoneNumber": "800-777-0000",
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95055,
+    "termYear": 10
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "2.410",
+    "phoneNumber": "800-777-0000",
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95055,
+    "termYear": 20
+  },
+  {
+    "lenderName": "Bank Of America",
+    "mortgageRate": "2.000",
+    "phoneNumber": "800-777-0000",
+    "website": "https://www.bankofamerica.com/",
+    "zipCode": 95055,
+    "termYear": 30
   },
   {
     "lenderName": "Chase",
     "mortgageRate": "3.350",
     "phoneNumber": "800-777-2222",
     "website": "https://www.chase.com/",
+    "zipCode": 95051,
+    "termYear": 10
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "3.250",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
+    "zipCode": 95051,
+    "termYear": 20
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "3.050",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
+    "zipCode": 95051,
+    "termYear": 30
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "3.150",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
     "zipCode": 95052,
-    "termYear": 15
+    "termYear": 10
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "3.050",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
+    "zipCode": 95052,
+    "termYear": 20
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "2.350",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
+    "zipCode": 95052,
+    "termYear": 30
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "4.150",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
+    "zipCode": 95053,
+    "termYear": 10
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "4.050",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
+    "zipCode": 95053,
+    "termYear": 20
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "4.550",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
+    "zipCode": 95053,
+    "termYear": 30
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "3.850",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
+    "zipCode": 95054,
+    "termYear": 10
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "3.450",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
+    "zipCode": 95054,
+    "termYear": 20
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "3.050",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
+    "zipCode": 95054,
+    "termYear": 30
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "3.450",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
+    "zipCode": 95055,
+    "termYear": 10
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "3.050",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
+    "zipCode": 95055,
+    "termYear": 20
+  },
+  {
+    "lenderName": "Chase",
+    "mortgageRate": "2.550",
+    "phoneNumber": "800-777-2222",
+    "website": "https://www.chase.com/",
+    "zipCode": 95055,
+    "termYear": 30
+  },
+  {
+    "lenderName": "Citibank",
+    "mortgageRate": "3.750",
+    "phoneNumber": "800-777-1111",
+    "website": "https://www.citibank.com/",
+    "zipCode": 95055,
+    "termYear": 10
+  },
+  {
+    "lenderName": "Citibank",
+    "mortgageRate": "3.450",
+    "phoneNumber": "800-777-1111",
+    "website": "https://www.citibank.com/",
+    "zipCode": 95055,
+    "termYear": 20
   },
   {
     "lenderName": "Citibank",
     "mortgageRate": "3.250",
     "phoneNumber": "800-777-1111",
     "website": "https://www.citibank.com/",
-    "zipCode": 95053,
+    "zipCode": 95055,
     "termYear": 30
   },
   {
@@ -60,7 +508,7 @@
     "mortgageRate": "3.050",
     "phoneNumber": "800-777-9999",
     "website": "https://www.KeyBank.com/",
-    "zipCode": 95054,
+    "zipCode": 95057,
     "termYear": 30
   },
   {
@@ -68,7 +516,7 @@
     "mortgageRate": "3.750",
     "phoneNumber": "800-777-6666",
     "website": "https://www.Etrade.com/",
-    "zipCode": 94305,
+    "zipCode": 95058,
     "termYear": 15
   },
   {
@@ -76,7 +524,7 @@
     "mortgageRate": "3.150",
     "phoneNumber": "800-777-2222",
     "website": "https://www.wellsfargo.com/",
-    "zipCode": 94305,
+    "zipCode": 95056,
     "termYear": 30
   },
   {
@@ -84,7 +532,7 @@
     "mortgageRate": "3.750",
     "phoneNumber": "800-777-2222",
     "website": "https://www.wellsfargo.com/",
-    "zipCode": 94305,
+    "zipCode": 95056,
     "termYear": 10
   },
   {
@@ -92,7 +540,7 @@
     "mortgageRate": "2.750",
     "phoneNumber": "800-777-2222",
     "website": "https://www.wellsfargo.com/",
-    "zipCode": 94305,
-    "termYear": 5
+    "zipCode": 95056,
+    "termYear": 20
   }
 ]
