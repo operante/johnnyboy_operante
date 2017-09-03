@@ -3,7 +3,7 @@
  * This function is invoked when Calculate Payment button is clicked to read the purchase price, loan term, and other details to simulate and display the Monthly payment, Total Payment, Total Interest.
  *
  */
-function computeLoan() {
+function computeLoan(e) {
     if (document.getElementById("purchasePrice").value) {
         let purchasePrice = document.getElementById("purchasePrice").value;
         let interestRate = document.getElementById("rate").value * 0.01;       // % converted to decimal
@@ -115,10 +115,27 @@ function checkPurchasePrice() {
     }
 }
 
-function checkZipcode() {
+/*
+ * Zipcode validation
+ */
+function checkZipcode(e) {
+    zipCodeEntered(e);
     if (document.getElementById("zipcode").value) {
         document.getElementById("validateZipcodeMsg").innerHTML = "(i.e. 95054 for UCSC)";
     } else {
         document.getElementById("validateZipcodeMsg").innerHTML = "<span style='color:red;'>Please enter zipcode. (i.e. 95054)</span>";
     }
-}
+};
+
+/*
+ * Listens for enter key and runs computeLoan function
+ */
+function zipCodeEntered(e) {
+    let zipCodeEnter = document.getElementById("zipcode");
+
+    zipCodeEnter.addEventListener("keyup", function (e) {
+    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        computeLoan(e); // Runs computeLoan function
+        }
+      })
+    };
